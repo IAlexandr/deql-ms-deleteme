@@ -18,10 +18,10 @@ export default {
     },
     username: 'postgres',
     password: 'postgres',
-    dbName: 'template_postgis',
-    accessDbSeed: true,
-    syncForce: true,
-    accessSyncForce: true,
+    dbName: 'gis_snowplows',
+    accessDbSeed: false,
+    syncForce: false,
+    accessSyncForce: false,
   },
   rabbitmq: {
     connection: {
