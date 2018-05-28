@@ -5,3 +5,4 @@ export { default as logger } from 'tools/logger/config';
 export { default as redis } from 'tools/redis/config';
 
 export { default as sessionInfo } from './sessionInfo';
+export { default as uploadXlsxFeatures } from './upload-xlsx-features';

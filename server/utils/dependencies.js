@@ -7,6 +7,7 @@ import options from 'tools/options';
 
 const { debug, time } = logger('project.dependencies');
 
+export let exportedSchema;
 export const dependencies = async function({ app }) {
   const initialized = time('initializing');
   const dbConfig = options.config.sequelize;
@@ -20,7 +21,7 @@ export const dependencies = async function({ app }) {
   app.use(sessionMidleware);
 
   // выгрузка схем из postgis
-  const exportedSchema = await exportDbModels({
+  exportedSchema = await exportDbModels({
     dbConnection: {
       host: dbConfig.options.host,
       port: dbConfig.options.port,

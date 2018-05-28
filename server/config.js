@@ -12,13 +12,13 @@ export default {
   sequelize: {
     options: {
       dialect: 'postgres',
-      host: '10.10.10.20',
-      port: 5433,
+      host: '172.212',
+      port: 5435,
       logging: false,
     },
-    username: 'postgres',
-    password: 'postgres',
-    dbName: 'gis_snowplows',
+    username: 'user',
+    password: 'user21',
+    dbName: 'deck',
     accessDbSeed: false,
     syncForce: false,
     accessSyncForce: false,
